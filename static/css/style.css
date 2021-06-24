@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(238, 227, 227);
+    background-image: url("../images/backmain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: monteserrat;
+}
+
+
+.logo {
+    color: #ff4652;
+    margin-left: 25px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #ff4652;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:rgb(232, 241, 241) solid 1px;
+    max-width: 100%;
+    background-color: rgb(53, 65, 120);
+
+}
+.navbar {
+    /* height: 70px; */
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 17px;
+}
+.navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(53, 65, 120, 0.5);
+    transition: 1s ease;
+    border-radius: 3px;
+}
+
+.button a button{
+    border: none;
+    margin-right: 50px;
+    background-color: #ff4652;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+}
+.formdiv {
+    background-color:#354178;
+    width: 500px;
+    margin: 30px auto;
+}
+.formdiv form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.formdiv form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+}
+
+.fellows {
+    width: 500px;
+    margin: 30px auto;
+}
+.fellows h3 {
+    color: #fff;
+}
+.fellows small {
+    color: #fff;
+    
+}
+.fellows small strong {
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #354178;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: #fff;
+  }
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+table tr td button a {
+      text-decoration: none;
+  }
+
+table tr td #delete {
+    border: none;
+    background-color: #f44336;
+    border-radius: 9px;
+    padding: 7px 14px;
+    font-size: 16px;
+}
+table tr td #update {
+    border: none;
+    background-color: #4CAF50;
+    border-radius: 9px;
+    padding: 7px 14px;
+    font-size: 16px;
+}
+table tr td #delete:hover {
+    border: none;
+    background-color: rgba(242, 66, 53, 0.5);
+    transition: 1s ease;
+    border-radius: 9px;
+    padding: 7px 14px;
+    font-size: 16px;
+}
+table tr td #update:hover {
+    border: none;
+    background-color: rgba(76, 175, 80, 0.5);
+    transition: 1s ease;
+    border-radius: 9px;
+    padding: 7px 14px;
+    font-size: 16px;
+}
+
+.checkbtn {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px){
+    header .logo {
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+
+    header .navbar ul li a {
+        font-size: 16px;
+        
+    }
+}
+
+@media (max-width: 856px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: rgb(53, 65, 120);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li {
+        display: block;
+        font-size: 40px;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    a:hover, a:active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    body {
+        background-image: url("../images/backmain.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: calc(100vh - 80px);
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .checkbtn {
+        display: block;
+    }
+    header {
+        width: 100%;
+        max-width: 100%;
+
+        /* flex-direction: column; */
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: rgb(53, 65, 120);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .formdiv {
+        width: 100%;
+    }
+}

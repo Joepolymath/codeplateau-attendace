@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeplateau Attendace</title>
+
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}"/>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        
+        <script src="https://kit.fontawesome.com/68904c8f90.js" crossorigin="anonymous"></script>
+
+    <!--===============================================================================================-->
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+      
+        <div class="logo">
+            <h1><a href="{{ url_for('home') }}">CodePlateau</a></h1>
+        </div>
+
+        <div class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('view') }}">Views</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="button">
+            <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+        </div>
+
+    </header>
+<main>
+    {% block content %}
+    
+    {% endblock content %}
+
+</main>
+
+
+<script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</body>
+</html>
+</body>
+</html>

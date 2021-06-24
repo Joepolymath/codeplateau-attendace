@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h1>Codeplateau Attendance</h1>
+    <h2>Welcome to Codeplateau v2.0.0</h2>
+    <div class="formdiv">
+        <!-- creating the attendance form -->
+        <form action="/" method="POST">
+            <input type="text" name="firstname" placeholder="Enter your first name" required>                
+            <input type="text" name="lastname" placeholder="Enter your Last name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock content %}
+

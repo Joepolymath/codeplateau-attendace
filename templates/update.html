@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Update Attendance</h1>
+    <div class="formdiv">
+        <!-- creating the attendance form -->
+        <form action="{{ url_for('update', person=person) }}" method="POST">
+            <input type="text" name="firstname" placeholder="Enter your first name" value="{{ fellow_to_update.firstname }}" required>                
+            <input type="text" name="lastname" placeholder="Enter your Last name" value="{{ fellow_to_update.lastname }}" required>
+            <input type="email" name="email" placeholder="Enter your email" value="{{ fellow_to_update.email }}" required>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+{% endblock content %}

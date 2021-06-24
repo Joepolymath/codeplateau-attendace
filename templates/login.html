@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codeplateau Attendace</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> -->
+    </head>
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="logo">
+            <h1>codeplateau.com</h1>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="button">
+            <a href=""><button>Sign Up</button></a>
+        </div>
+    </header>
+
+
+    <h1>Login</h1>
+    <h2>Welcome to Codeplateau v2.0.0</h2>
+    <div class="formdiv">
+        <!-- creating the attendance form -->
+        <form action="" method="POST">
+            <input type="text" placeholder="Enter your username" name="username">
+            <input type="password" placeholder="Enter your password" name="password">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
